@@ -18,8 +18,9 @@ public class SearchDefs {
         Driver.getDriver().findElement(By.name("q")).sendKeys(string);
     }
     @Then("sonuclarda {string} oldugunu dogrular")
-    public void sonuclarda_oldugunu_dogrular(String string) {
+    public void sonuclarda_oldugunu_dogrular(String string) throws InterruptedException {
         assert true;
+        Thread.sleep(5000);
     }
     @Then("close the application")
     public void close_the_application() {
