@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class SearchDefs {
 
@@ -20,6 +21,7 @@ public class SearchDefs {
     @Then("sonuclarda {string} oldugunu dogrular")
     public void sonuclarda_oldugunu_dogrular(String string) throws InterruptedException {
         assert true;
+        ReusableMethods.clickWithText("Gmail");
         Thread.sleep(5000);
     }
     @Then("close the application")
